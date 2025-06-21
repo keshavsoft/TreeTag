@@ -1,9 +1,6 @@
-import { StartFunc as StartFuncFromSaveButtonId } from './SaveButtonId/EntryFile.js';
+import { StartFunc as StartFuncFromSaveButtonId } from './SaveButtonId/entryFile.js';
 
 let StartFunc = () => {
-
-    // console.log("aaaaaaaaaaaaaaaaaaaa");
-
 	StartFuncFromSaveButtonId();
 };
 
