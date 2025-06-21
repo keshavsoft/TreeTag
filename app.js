@@ -1,6 +1,7 @@
 import express from 'express';
 const app = express();
-const port = 3000;
+
+let port = normalizePort(process.env.PORT || '5015');
 
 import { router as routerFromV1 } from "./V1/routes.js";
 import { router as routerFromV2 } from "./V2/routes.js";
@@ -15,3 +16,17 @@ app.listen(port, () => {
     console.log(`Open here http://localhost:${port}`);
 
 });
+
+function normalizePort(val) {
+    var port = parseInt(val, 10);
+
+    if (isNaN(port)) {
+        return val;
+    }
+
+    if (port >= 0) {
+        return port;
+    }
+
+    return false;
+};
