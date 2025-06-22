@@ -14,19 +14,19 @@
             "formatter": "jFLocalSerialColumn"
         },
         {
-            "field": "DATETIME",
+            "field": "DateTime",
             "title": "DateTime"
         },
         {
-            "field": "TREENAME",
+            "field": "TreeName",
             "title": "TreeName"
         },
         {
-            "field": "LATITUDE",
+            "field": "Latitude",
             "title": "Latitude"
         },
          {
-            "field": "LONGITUDE",
+            "field": "Longitude",
             "title": "Longitude"
         }
     ]
