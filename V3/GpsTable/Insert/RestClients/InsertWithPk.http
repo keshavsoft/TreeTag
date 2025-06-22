@@ -1,0 +1,10 @@
+POST http://localhost:3000/V1/GpsTable/Insert/InsertWithPk
+Content-Type: application/json
+
+{
+	"UserName" : "",
+	"Longitude" : "",
+	"Latitude" : "",
+	"TreeName" : "",
+	"DateTime" : ""
+}

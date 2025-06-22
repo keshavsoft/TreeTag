@@ -1,0 +1,2 @@
+DELETE http://localhost:3000/V1/GpsTable/SubTable/Delete/WithPk/{rowIndex}/{ColName}/{pk}
+Content-Type: application/json

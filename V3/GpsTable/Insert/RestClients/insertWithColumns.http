@@ -1,0 +1,15 @@
+POST http://localhost:3000/V1/GpsTable/Insert/InsertWithColumns
+Content-Type: application/json
+
+{
+	"UserName" : "",
+	"Longitude" : "",
+	"Latitude" : "",
+	"TreeName" : "",
+	"DateTime" : ""
+	"UserName" : "",
+	"Longitude" : "",
+	"Latitude" : "",
+	"TreeName" : "",
+	"DateTime" : ""
+}

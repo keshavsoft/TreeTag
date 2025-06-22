@@ -5,11 +5,13 @@ let port = normalizePort(process.env.PORT || '5015');
 
 import { router as routerFromV1 } from "./V1/routes.js";
 import { router as routerFromV2 } from "./V2/routes.js";
+import { router as routerFromV3 } from "./V3/routes.js";
 
 app.use(express.static('Public'));
 
 app.use("/V1", routerFromV1);
 app.use("/V2", routerFromV2);
+app.use("/V3", routerFromV3);
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
