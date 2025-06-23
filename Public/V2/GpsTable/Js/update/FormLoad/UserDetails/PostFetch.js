@@ -1,7 +1,7 @@
 let StartFunc = async () => {
     let jVarLocalFilterString = getUrlQueryParams({ inGetKey: "pk" });
     
-    let jVarLocalFetchUrl = `/V1/Farmers/Read/RowDataWithPk/${jVarLocalFilterString}`;
+    let jVarLocalFetchUrl = `/V4/GpsTable/Read/RowDataWithPk/${jVarLocalFilterString}`;
     let response = await fetch(jVarLocalFetchUrl);
     let data = await response.json();
 
