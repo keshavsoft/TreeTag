@@ -1,10 +1,10 @@
 let StartFunc = ({ inDataToShow }) => {
    let jVarLocalData = inDataToShow;
 
-   jFLocalToInputFarmerNameId({ inFarmerNameId: jVarLocalData.FARMERNAME });
-   jFLocalToInputFarmerMobileId({ inFarmerMobileId: jVarLocalData.FARMERMOBILE });
-   jFLocalToInputFarmerCityId({ inFarmerCityId: jVarLocalData.FARMERCITY });
-   jFLocalToInputFarmerFieldId({ inFarmerFieldId: jVarLocalData.FARMERFIELD })
+   jFLocalToInputFarmerNameId({ inFarmerNameId: jVarLocalData.DATETIME });
+   jFLocalToInputFarmerMobileId({ inFarmerMobileId: jVarLocalData.TREENAME });
+   jFLocalToInputFarmerCityId({ inFarmerCityId: jVarLocalData.LATITUDE });
+   jFLocalToInputFarmerFieldId({ inFarmerFieldId: jVarLocalData.LONGITUDE })
 
 };
 

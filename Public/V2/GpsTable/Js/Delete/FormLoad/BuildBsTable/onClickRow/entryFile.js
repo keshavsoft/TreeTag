@@ -20,7 +20,7 @@ const StartFunc = async (row, $element, field) => {
                 await FetchDelete({ inRowPk: row.pk });
                 Swal.fire({
                     title: "Deleted!",
-                    text: "The record has been deleted.",
+                    text: `The record ${row.pk} has been deleted.`,
                     icon: "success",
                     confirmButtonColor: "#3085d6",
                     confirmButtonText: "OK"
