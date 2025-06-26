@@ -8,6 +8,10 @@
       transition: 0.3s;
     }
 
+    #SaveButtonId{
+      cursor: pointer;
+    }
+
     button {
       margin: 0.5em;
       padding: 0.6em 1.2em;
@@ -71,4 +75,14 @@
     #tryAgainBtn {
       display: none;
       background-color: #f44336;
+    }
+
+    .success-message {
+      color: #2e7d32;
+      font-weight: bold;
+      background: #c8e6c9;
+      border-radius: 5px;
+      padding: 0.2em 0.5em;
+      box-shadow: 0 2px 8px rgba(46,125,50,0.08);
+      transition: background 0.3s, color 0.3s;
     }
