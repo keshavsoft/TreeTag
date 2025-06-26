@@ -18,5 +18,9 @@
             "ColumnName": "Longitude",
             "type": "STRING"
         }
+    ],
+    "Tables": [
+        "GpsTable",
+        "Donors"
     ]
 }
