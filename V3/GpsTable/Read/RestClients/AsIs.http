@@ -1,1 +1,1 @@
-GET http://localhost:3000/V1/GpsTable/Read/AsIs
+GET http://localhost:5015/V3/GpsTable/Read/AsIs
