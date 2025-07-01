@@ -1,0 +1,5 @@
+POST http://localhost:5015/V6/GpsTable/SubTable/Insert/InsertAsIs/{RowIndex}/{KeyName}
+Content-Type: application/json
+
+{
+}

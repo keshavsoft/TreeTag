@@ -1,24 +1,4 @@
 {
-    "TableName": "GpsTable",
-    "Columns": [
-        {
-            "ColumnName": "DateTime",
-            "type": "STRING"
-        },
-        {
-            "ColumnName": "TreeName",
-            "unique": false,
-            "type": "NUMBER"
-        },
-        {
-            "ColumnName": "Latitude",
-            "type": "STRING"
-        },
-        {
-            "ColumnName": "Longitude",
-            "type": "STRING"
-        }
-    ],
     "Tables": [
         "GpsTable",
         "Donors"

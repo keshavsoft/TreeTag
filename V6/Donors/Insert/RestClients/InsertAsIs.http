@@ -1,0 +1,7 @@
+POST http://localhost:5015/V6/Donors/Insert/InsertAsIs
+Content-Type: application/json
+
+{
+	"DonorMobile" : "",
+	"DonorName" : ""
+}

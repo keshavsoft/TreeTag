@@ -1,11 +1,14 @@
-[
-    {
-        "ColumnName": "DonorName",
-        "type": "STRING"
-    },
-    {
-        "ColumnName": "DonorMobile",
-        "unique": false,
-        "type": "NUMBER"
-    }
-]
+{
+    "Columns": [
+        {
+            "field": "DonorName",
+            "type": "STRING"
+        },
+        {
+            "field": "DonorMobile",
+            "unique": false,
+            "type": "NUMBER"
+        }
+    ],
+    "Data": []
+}
