@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate - AllIsWell</title>
+    <link rel="stylesheet" href="donate.css" />
+</head>
+
+<body>
+    <!-- 3D background image that pops out -->
+    <img src="hero-bg.png" class="bg-pop" alt="Decorative" />
+
+    <div class="donate-container">
+        <h1>Support AllIsWell</h1>
+        <p>Your contribution helps us continue our mission.</p>
+
+        <form id="donation-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+
+            <label for="tel">Mobile Number</label>
+            <input type="tel" id="email" required />
+
+            <!-- <label>Choose Amount</label>
+            <div class="amount-buttons">
+                <button type="button" class="amount" data-amount="100">₹100</button>
+                <button type="button" class="amount" data-amount="500">₹500</button>
+                <button type="button" class="amount" data-amount="1000">₹1000</button>
+            </div> -->
+
+            <label for="custom-amount">Or Enter Custom Amount</label>
+            <input type="number" id="custom-amount" min="1" />
+
+            <button type="submit" id="donate-btn">Donate Now</button>
+        </form>
+    </div>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="donate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+/* Full white background and center layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container with background image inside it */
+.donate-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    background-color: #ffffff;
+    background-image: url("hero-bg.png");
+    /* Replace with your image */
+    background-size: auto;
+    /* or 'contain' or 'cover' */
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Form and content styles */
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.amount-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.amount {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.amount.active {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#donate-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#donate-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .donate-container {
+        padding: 20px;
+        background-size: 120px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p,
+    label,
+    input,
+    .amount,
+    #donate-btn {
+        font-size: 14px;
+    }
+
+    .amount-buttons {
+        flex-direction: column;
+    }
+
+    .amount {
+        width: 100%;
+    }
+}
