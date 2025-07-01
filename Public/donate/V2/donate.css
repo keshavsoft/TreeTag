@@ -1,0 +1,150 @@
+/* Full white background and center layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* 🧠 3D image that pops out from the center container */
+.bg-pop {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    width: 800px;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 1;
+}
+
+/* Main white container */
+.donate-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 0px 0px  rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+}
+
+/* Transparent content inside the container */
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.85);
+    color: #000000;
+    /* pure black for high contrast */
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+/* Transparent input fields */
+input {
+    width: 40%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: #333;
+}
+
+/* Amount buttons */
+.amount-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.amount {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #222;
+}
+
+.amount.active {
+    background-color: rgba(40, 167, 69, 0.85);
+    color: #fff;
+}
+
+/* Donate button */
+#donate-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#donate-btn:hover {
+    background-color: rgba(0, 86, 179, 0.8);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .bg-pop {
+        width: 400px;
+        top: 45%;
+    }
+
+    .donate-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p,
+    label,
+    input,
+    .amount,
+    #donate-btn {
+        font-size: 14px;
+    }
+
+    .amount-buttons {
+        flex-direction: column;
+    }
+
+    .amount {
+        width: 100%;
+    }
+}
