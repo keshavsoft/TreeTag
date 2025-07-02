@@ -36,6 +36,15 @@ let StartFunc = () => {
     );
 };
 
+function updateMap(lat, lon) {
+    if (!marker) {
+        marker = L.marker([lat, lon]).addTo(map);
+    } else {
+        marker.setLatLng([lat, lon]);
+    }
+    map.setView([lat, lon], 15);
+};
+
 const jFLocalSuccess = (pos) => {
     const { latitude, longitude, accuracy } = pos.coords;
     console.log("latitude : ", latitude);
@@ -48,7 +57,7 @@ const jFLocalSuccess = (pos) => {
         inTreeName: accuracy
     }).then(PromiseData => {
         console.log("aaaaaaaaaaaaaa : ", PromiseData);
-
+        updateMap(latitude, longitude);
     });
 };
 

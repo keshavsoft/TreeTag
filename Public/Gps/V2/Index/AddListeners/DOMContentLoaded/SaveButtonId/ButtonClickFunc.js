@@ -14,9 +14,7 @@ let StartFunc = () => {
             const userNameInput = document.getElementById('UserNameId');
             if (userNameInput) userNameInput.value = '';
         }, 1000);
-        
-        
-    }
+    };
 
     if (!navigator.geolocation) {
         console.log("Geolocation not supported.");

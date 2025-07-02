@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
   <link rel="stylesheet" href="style.css">
+  <style>
+    button {
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
@@ -17,7 +22,7 @@
   <input type="text" name="UserName" id="UserNameId">
   <p id="location">Click "Reset" to get your current location</p>
   <button onclick="getLocation()">Get Location</button>
-  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <button id="ToggleButtonId">Toggle Dark Mode</button>
   <button id="tryAgainBtn" onclick="getLocation()">Try Again</button>
   <button id="SaveButtonId">Save Location</button>
 
@@ -36,6 +41,10 @@
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
   <!-- <script src="index.js"></script> -->
+
+  <script>
+    let map, marker;
+  </script>
 
   <script type="module" src="./Index/entryFile.js"></script>
 </body>
