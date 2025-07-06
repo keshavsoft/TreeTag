@@ -5,7 +5,7 @@ const tryAgainBtn = document.getElementById("tryAgainBtn");
 let map, marker;
 
 function initMap() {
-    map = L.map('map').setView([0, 0], 2);
+    map = L.map('map').setView([20.5937, 78.9629], 5);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
