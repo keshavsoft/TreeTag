@@ -1,5 +1,5 @@
 {
-    "Columns": [
+    "columns": [
         {
             "field": "DonorName",
             "type": "STRING"
@@ -10,5 +10,5 @@
             "type": "NUMBER"
         }
     ],
-    "Data": []
+    "data": []
 }

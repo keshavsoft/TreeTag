@@ -1,9 +1,9 @@
 {
-    "Columns": [
+    "columns": [
         {
             "field": "Secret",
             "type": "STRING"
         }
     ],
-    "Data": []
+    "data": []
 }
