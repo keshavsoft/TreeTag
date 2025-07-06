@@ -48,7 +48,7 @@ function updateMap(lat, lon) {
     } else {
         marker.setLatLng([lat, lon]);
     }
-    map.setView([lat, lon], 15);
+    map.setView([lat, lon], 20);
 };
 
 function addToHistory(lat, lon) {
