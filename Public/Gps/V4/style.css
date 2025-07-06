@@ -96,3 +96,9 @@
    box-shadow: 0 2px 8px rgba(46, 125, 50, 0.08);
    transition: background 0.3s, color 0.3s;
  }
+
+ #error {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}

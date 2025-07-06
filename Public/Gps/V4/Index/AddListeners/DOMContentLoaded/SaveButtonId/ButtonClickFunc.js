@@ -24,7 +24,6 @@ let StartFunc = () => {
 
 
 
-
     if (!navigator.geolocation) {
         console.log("Geolocation not supported.");
         return;
