@@ -1,5 +1,5 @@
 {
-    "Columns": [
+    "columns": [
         {
             "field": "DateTime",
             "type": "STRING"
@@ -11,12 +11,14 @@
         },
         {
             "field": "Latitude",
+            "title": "Latitude",
             "type": "STRING"
         },
         {
             "field": "Longitude",
+            "title": "Longitude",
             "type": "STRING"
         }
     ],
-    "Data": []
+    "data": []
 }
