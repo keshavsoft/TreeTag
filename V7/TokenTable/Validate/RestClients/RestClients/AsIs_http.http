@@ -1,0 +1,6 @@
+POST http://localhost:3000/V7/TokenTable/Validate/Insert/http
+Content-Type: application/json
+
+{
+  "Secret": ""
+}

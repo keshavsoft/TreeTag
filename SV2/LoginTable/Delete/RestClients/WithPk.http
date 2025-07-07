@@ -1,0 +1,2 @@
+DELETE http://localhost:3000/SV2/LoginTable/Delete/WithPk/{pk}
+Content-Type: application/json

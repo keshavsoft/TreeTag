@@ -1,0 +1,5 @@
+POST http://localhost:3000/V7/LoginTable/SubTable/Insert/InsertAsIs/{RowIndex}/{KeyName}
+Content-Type: application/json
+
+{
+}

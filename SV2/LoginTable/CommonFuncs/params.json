@@ -1,0 +1,1 @@
+{"TableName":"LoginTable","DataPath":"Data","Columns":["UserName","PassWord"],"ColumnsWithSchema":[{"field":"UserName","type":"STRING"},{"field":"PassWord","unique":false,"type":"NUMBER"}]}
