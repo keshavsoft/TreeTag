@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Location Tracker</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Location Tracker</h2>
+  <input type="text" name="UserName" id="UserNameId" placeholder="Enter tree name" required>
+  <span id="errorMsg" style="color: red; display: none;">Tree name is required.</span>
+  <p id="location">Click "Save Location" to save where you are</p>
+  <b>
+    <li>
+      Give a minute gap before going to the next tree.
+    </li>
+  </b>
+  <br>
+  <!-- <button onclick="getLocation()">Get Location</button> -->
+  <button id="ToggleButtonId">Toggle Dark Mode</button>
+  <button id="tryAgainBtn" onclick="getLocation()">Try Again</button>
+  <button id="SaveButtonId" onclick="savelocation()">Save Location</button>
+
+  <div id="map"></div>
+
+  <div id="history">
+    <h3>Location History</h3>
+    <ul id="historyList"></ul>
+  </div>
+
+  <div id="share">
+    <!-- Share links will appear here -->
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- <script src="index.js"></script> -->
+
+  <script>
+    let map, marker;
+  </script>
+
+  <script type="module" src="./Index/entryFile.js"></script>
+</body>
+
+</html>
