@@ -1,24 +1,31 @@
-{
+{   "tableName": "GpsTable",
     "columns": [
         {
             "field": "DateTime",
+            "title": "Date Time",
+            "isInput": true,
             "type": "STRING"
         },
         {
             "field": "TreeName",
+            "title": "Tree Name",
+            "isInput": true,
             "unique": false,
             "type": "NUMBER"
         },
         {
             "field": "Latitude",
+            "isInput": true,
             "title": "Latitude",
             "type": "STRING"
         },
         {
             "field": "Longitude",
             "title": "Longitude",
+            "isInput": true,
             "type": "STRING"
         }
     ],
-    "data": []
+    "data": [],
+    "Vertical": []
 }
