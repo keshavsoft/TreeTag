@@ -1,8 +1,6 @@
 {
     "Tables": [
         "GpsTable",
-        "Donors",
-        "LoginTable",
-        "TokenTable"
+        "Donors"
     ]
 }

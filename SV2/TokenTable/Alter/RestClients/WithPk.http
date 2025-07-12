@@ -1,5 +1,0 @@
-POST http://localhost:3000/SV2/TokenTable/Alter/WithPk/{pk}
-Content-Type: application/json
-
-{
-}
