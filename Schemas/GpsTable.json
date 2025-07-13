@@ -1,4 +1,5 @@
-{   "tableName": "GpsTable",
+{
+    "tableName": "GpsTable",
     "columns": [
         {
             "field": "DateTime",
@@ -22,6 +23,18 @@
         {
             "field": "Longitude",
             "title": "Longitude",
+            "isInput": true,
+            "type": "STRING"
+        },
+        {
+            "field": "UserName",
+            "title": "UserName",
+            "isInput": true,
+            "type": "STRING"
+        },
+        {
+            "field": "pk",
+            "title": "pk",
             "isInput": true,
             "type": "STRING"
         }
