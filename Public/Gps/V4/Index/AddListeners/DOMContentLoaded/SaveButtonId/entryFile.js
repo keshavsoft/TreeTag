@@ -6,9 +6,6 @@ let StartFunc = () => {
 	if (jVarLocalHtmlId === null === false) {
 		jVarLocalHtmlId.addEventListener('click', StartFuncButtonClickFunc);
 	};
-
 };
-
-
 
 export { StartFunc };
