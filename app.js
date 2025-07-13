@@ -8,12 +8,16 @@ import { StartFunc as StartFuncFromMiddleware } from "./Token/MiddleWares/entryF
 
 import { router as routerFromToken } from "./Token/routes.js";
 import { router as routerFromV1 } from "./V1/routes.js";
+import { router as routerFromSV1 } from "./SV1/routes.js";
+import { router as routerFromV8 } from "./V8/routes.js";
 
 app.use(express.static('public'));
 app.use(cookieParser());
 
 app.use("/Token", routerFromToken);
 app.use("/V1", routerFromV1);
+app.use("/SV1", StartFuncFromMiddleware, routerFromSV1);
+app.use("/V8", routerFromV8);
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
