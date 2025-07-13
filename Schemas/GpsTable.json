@@ -11,8 +11,7 @@
             "field": "TreeName",
             "title": "Tree Name",
             "isInput": true,
-            "unique": false,
-            "type": "NUMBER"
+            "filterControl": "input"
         },
         {
             "field": "Latitude",
@@ -30,7 +29,7 @@
             "field": "UserName",
             "title": "UserName",
             "isInput": true,
-            "type": "STRING"
+            "filterControl": "select"
         },
         {
             "field": "pk",
