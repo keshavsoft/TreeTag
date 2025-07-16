@@ -1,0 +1,7 @@
+POST http://localhost:3000/SV2/Donors/Insert/SchemaColumnsOnly
+Content-Type: application/json
+
+{
+  "DonorName": "",
+  "DonorMobile": ""
+}

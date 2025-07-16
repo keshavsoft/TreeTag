@@ -1,0 +1,1 @@
+{"TableName":"Donors","DataPath":"Data","Columns":["DonorName","DonorMobile"],"ColumnsWithSchema":[{"field":"DonorName","title":"Donor Name","isInput":true,"type":"STRING"},{"field":"DonorMobile","title":"Donor Mobile","isInput":true,"unique":false,"type":"NUMBER"}]}
