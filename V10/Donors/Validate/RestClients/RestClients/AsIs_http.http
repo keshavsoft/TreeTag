@@ -1,0 +1,7 @@
+POST http://localhost:3000/V10/Donors/Validate/Insert/http
+Content-Type: application/json
+
+{
+  "DonorName": "",
+  "DonorMobile": ""
+}

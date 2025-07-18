@@ -4,8 +4,7 @@
         {
             "field": "DateTime",
             "title": "Date Time",
-            "isInput": true,
-            "type": "STRING"
+            "isInput": true
         },
         {
             "field": "TreeName",

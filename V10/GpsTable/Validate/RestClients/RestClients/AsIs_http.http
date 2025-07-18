@@ -1,0 +1,11 @@
+POST http://localhost:3000/V10/GpsTable/Validate/Insert/http
+Content-Type: application/json
+
+{
+  "DateTime": "",
+  "TreeName": "",
+  "Latitude": "",
+  "Longitude": "",
+  "UserName": "",
+  "pk": ""
+}
