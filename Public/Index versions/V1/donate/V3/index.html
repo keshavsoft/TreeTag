@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate - AllIsWell</title>
+    <link rel="stylesheet" href="donate.css" />
+</head>
+
+<body>
+    <!-- Background image -->
+    <img src="hero-bg.png" class="bg-pop" alt="Decorative" />
+
+    <div class="donate-container">
+        <div class="form-and-qr">
+            <!-- Form Section -->
+            <div class="form-section">
+                <h1>Support AllisWell</h1>
+                <p>Your contribution helps us continue our mission.</p>
+
+                <form id="donation-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required />
+
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" required />
+
+                    <button type="submit" id="donate-btn">Submit</button>
+                </form>
+            </div>
+
+            <!-- QR Code Section -->
+            <div class="qr-section">
+                <img src="scan.png" alt="QR Code" class="qr-image" />
+            </div>
+        </div>
+    </div>
+
+    <script src="donate.js"></script>
+</body>
+
+</html>
