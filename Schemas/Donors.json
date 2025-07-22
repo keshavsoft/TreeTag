@@ -16,5 +16,10 @@
         }
     ],
     "data": [],
-    "Vertical": []
+    "Vertical": [],
+    "DataTableOptions": {
+        "Header": {
+            "autoFocus": "DonorName"
+        }
+    }
 }
