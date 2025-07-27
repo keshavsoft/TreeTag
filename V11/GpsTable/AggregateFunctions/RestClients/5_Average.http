@@ -1,0 +1,1 @@
+GET http://localhost:5015/V11/GpsTable/AggregateFunctions/Average/{ColumnName}

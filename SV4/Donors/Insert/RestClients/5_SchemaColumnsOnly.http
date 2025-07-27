@@ -1,0 +1,7 @@
+POST http://localhost:5015/SV4/Donors/Insert/SchemaColumnsOnly
+Content-Type: application/json
+
+{
+  "DonorName": "",
+  "DonorMobile": ""
+}

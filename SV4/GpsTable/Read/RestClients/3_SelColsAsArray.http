@@ -1,0 +1,4 @@
+POST http://localhost:5015/SV4/GpsTable/Read/SelColsAsArray
+Content-Type: application/json
+
+[ "exampleKey"]

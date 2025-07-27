@@ -1,0 +1,1 @@
+DELETE http://localhost:5015/SV4/Donors/Delete/WithPk/{pk}

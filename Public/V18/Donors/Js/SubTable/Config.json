@@ -1,0 +1,1 @@
+{"TableName":"/V11/undefined","showFooter":true,"toolbar":"#toolbar","searchable":true,"search":true,"columns":[{"field":"DonorName","title":"Donor Name","isInput":true,"type":"STRING"},{"field":"DonorMobile","title":"Donor Mobile","isInput":true,"unique":false,"type":"NUMBER"}]}
