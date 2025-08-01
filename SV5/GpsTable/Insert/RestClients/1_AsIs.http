@@ -1,0 +1,11 @@
+POST http://localhost:5015/SV5/GpsTable/Insert/AsIs
+Content-Type: application/json
+
+{
+  "DateTime": "",
+  "TreeName": "",
+  "Latitude": "",
+  "Longitude": "",
+  "UserName": "",
+  "pk": ""
+}

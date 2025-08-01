@@ -1,0 +1,11 @@
+POST http://localhost:5015/SV5/GpsTable/SubTable/Alter/WithPk/{RowPk}/{KeyName}/{pk}
+Content-Type: application/json
+
+{
+  "DateTime": "",
+  "TreeName": "",
+  "Latitude": "",
+  "Longitude": "",
+  "UserName": "",
+  "pk": ""
+}

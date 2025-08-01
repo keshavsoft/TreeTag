@@ -1,0 +1,7 @@
+POST http://localhost:5015/SV5/Donors/Insert/AsIsAndTS
+Content-Type: application/json
+
+{
+  "DonorName": "",
+  "DonorMobile": ""
+}
