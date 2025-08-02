@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Location Tracker</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Location Tracker</h2>
+  <div id="map"></div>
+
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- <script src="index.js"></script> -->
+
+  <script>
+    let map, marker;
+
+    function updateMap(lat, lon) {
+      if (!marker) {
+        marker = L.marker([lat, lon]).addTo(map);
+      } else {
+        marker.setLatLng([lat, lon]);
+      };
+
+      map.setView([lat, lon], 20);
+    };
+
+    k1 = (lat, lon) => {
+
+
+      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        maxNativeZoom: 19, // OSM max available zoom is at 19.
+        maxZoom: 22 // Match the map maxZoom, or leave map.options.maxZoom undefined.
+      }).addTo(map);
+
+    };
+  </script>
+
+  <script type="module" src="./Index/entryFile.js"></script>
+</body>
+
+</html>

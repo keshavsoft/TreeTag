@@ -1,4 +1,4 @@
-POST http://localhost:5015/V12/GpsTable/Read/SelColumns
+POST http://localhost:5015/V12/GpsTable/Read/SelColumns/A1
 Content-Type: application/json
 
 [ "exampleKey"]
