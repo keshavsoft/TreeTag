@@ -1,0 +1,1 @@
+DELETE http://localhost:5015/V13/GpsTable/Delete/WithPk/{pk}

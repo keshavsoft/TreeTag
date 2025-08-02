@@ -1,0 +1,7 @@
+POST http://localhost:5015/V13/Donors/Insert/AsIsNoPk
+Content-Type: application/json
+
+{
+  "DonorName": "",
+  "DonorMobile": ""
+}

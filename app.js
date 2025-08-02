@@ -21,6 +21,8 @@ import { router as routerFromV11 } from "./V11/routes.js";
 import { router as routerFromSV4 } from "./SV4/routes.js";
 import { router as routerFromV12 } from "./V12/routes.js";
 import { router as routerFromSV5 } from "./SV5/routes.js";
+import { router as routerFromV13 } from "./V13/routes.js";
+import { router as routerFromSV6 } from "./SV6/routes.js";
 
 app.use(express.static('Public'));
 app.use(cookieParser());
@@ -37,6 +39,8 @@ app.use("/V11", routerFromV11);
 app.use("/SV4", StartFuncFromMiddleware, routerFromSV4);
 app.use("/V12", routerFromV12);
 app.use("/SV5", StartFuncFromMiddleware, routerFromSV5);
+app.use("/V13", routerFromV13);
+app.use("/SV6", StartFuncFromMiddleware, routerFromSV6);
 
 function normalizePort(val) {
     var port = parseInt(val, 10);

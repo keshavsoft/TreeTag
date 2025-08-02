@@ -1,0 +1,9 @@
+POST http://localhost:5015/SV6/Donors/Insert/BulkAsIs
+Content-Type: application/json
+
+[
+  {
+    "DonorName": "",
+    "DonorMobile": ""
+  }
+]

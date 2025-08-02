@@ -1,0 +1,7 @@
+POST http://localhost:5015/V13/Donors/SubTable/Insert/WithUuIdAndDT/{RowIndex}/{KeyName}
+Content-Type: application/json
+
+{
+  "DonorName": "",
+  "DonorMobile": ""
+}

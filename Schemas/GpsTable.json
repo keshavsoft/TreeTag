@@ -41,7 +41,8 @@
     "Vertical": [],
     "DataTableOptions": {
         "Header": {
-            "autoFocus": "TreeName"
+            "autoFocus": "TreeName",
+            "GroupByColumn": "UserName"
         }
     }
 }
