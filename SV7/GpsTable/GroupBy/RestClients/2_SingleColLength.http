@@ -1,0 +1,1 @@
+GET http://localhost:5015/SV7/GpsTable/GroupBy/SingleColLength/{ColumnName}

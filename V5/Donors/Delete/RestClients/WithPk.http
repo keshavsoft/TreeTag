@@ -1,2 +1,0 @@
-DELETE http://localhost:5015/V5/Donors/Delete/WithPk/{pk}
-Content-Type: application/json

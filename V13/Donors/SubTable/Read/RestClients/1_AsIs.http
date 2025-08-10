@@ -1,1 +1,0 @@
-GET http://localhost:5015/V13/Donors/SubTable/Read/AsIs/{RowIndex}/{KeyName}

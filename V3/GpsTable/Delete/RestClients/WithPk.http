@@ -1,2 +1,0 @@
-DELETE http://localhost:3000/V1/GpsTable/Delete/WithPk/{pk}
-Content-Type: application/json

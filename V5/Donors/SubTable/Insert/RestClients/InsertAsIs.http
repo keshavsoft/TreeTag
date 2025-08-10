@@ -1,5 +1,0 @@
-POST http://localhost:5015/V5/Donors/SubTable/Insert/InsertAsIs/{RowIndex}/{KeyName}
-Content-Type: application/json
-
-{
-}

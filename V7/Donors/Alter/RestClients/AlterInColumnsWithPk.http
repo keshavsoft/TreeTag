@@ -1,5 +1,0 @@
-POST http://localhost:3000/V7/Donors/Alter/WithPk/{pk}
-Content-Type: application/json
-
-{
-}

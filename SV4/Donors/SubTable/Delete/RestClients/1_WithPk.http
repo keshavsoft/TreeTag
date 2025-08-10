@@ -1,1 +1,0 @@
-DELETE http://localhost:5015/SV4/Donors/SubTable/Delete/WithPk/{RowPk}/{KeyName}/{Key}

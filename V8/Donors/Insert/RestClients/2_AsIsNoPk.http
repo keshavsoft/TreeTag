@@ -1,7 +1,0 @@
-POST http://localhost:3000/V8/Donors/Insert/AsIsNoPk
-Content-Type: application/json
-
-{
-  "DonorName": "",
-  "DonorMobile": ""
-}

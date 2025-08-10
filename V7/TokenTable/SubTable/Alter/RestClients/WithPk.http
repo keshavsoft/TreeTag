@@ -1,5 +1,0 @@
-POST http://localhost:3000/V7/TokenTable/SubTable/Alter/WithPk/{rowIndex}/{ColName}/{pk}
-Content-Type: application/json
-
-{
-}

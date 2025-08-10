@@ -1,6 +1,0 @@
-POST http://localhost:3000/V7/TokenTable/Insert/AsIsNoPk
-Content-Type: application/json
-
-{
-  "Secret": ""
-}

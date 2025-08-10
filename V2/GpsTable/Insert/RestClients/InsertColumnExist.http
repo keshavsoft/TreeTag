@@ -1,9 +1,0 @@
-POST http://localhost:3000/V1/GpsTable/Insert/InsertColumnExist
-Content-Type: application/json
-
-{
-	"Longitude" : "",
-	"Latitude" : "",
-	"TreeName" : "",
-	"DateTime" : ""
-}

@@ -1,7 +1,0 @@
-POST http://localhost:5015/SV4/Donors/Insert/AsIsAndTS
-Content-Type: application/json
-
-{
-  "DonorName": "",
-  "DonorMobile": ""
-}

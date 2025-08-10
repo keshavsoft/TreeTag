@@ -1,4 +1,0 @@
-POST http://localhost:5015/SV6/Donors/Read/SelColumns
-Content-Type: application/json
-
-[ "exampleKey"]

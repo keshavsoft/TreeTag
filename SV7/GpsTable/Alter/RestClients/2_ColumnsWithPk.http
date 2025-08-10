@@ -1,0 +1,11 @@
+POST http://localhost:5015/SV7/GpsTable/Alter/ColumnsWithPk/{pk}
+Content-Type: application/json
+
+{
+  "DateTime": "",
+  "TreeName": "",
+  "Latitude": "",
+  "Longitude": "",
+  "UserName": "",
+  "pk": ""
+}

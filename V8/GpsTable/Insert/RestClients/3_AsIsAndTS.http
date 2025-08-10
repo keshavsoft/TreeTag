@@ -1,9 +1,0 @@
-POST http://localhost:3000/V8/GpsTable/Insert/AsIsAndTS
-Content-Type: application/json
-
-{
-  "DateTime": "",
-  "TreeName": "",
-  "Latitude": "",
-  "Longitude": ""
-}

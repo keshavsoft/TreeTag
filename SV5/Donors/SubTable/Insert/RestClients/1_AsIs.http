@@ -1,7 +1,0 @@
-POST http://localhost:5015/SV5/Donors/SubTable/Insert/AsIs/{RowIndex}/{KeyName}
-Content-Type: application/json
-
-{
-  "DonorName": "",
-  "DonorMobile": ""
-}

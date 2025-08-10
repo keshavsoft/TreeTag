@@ -1,9 +1,0 @@
-POST http://localhost:3000/V10/Donors/Insert/BulkAsIs
-Content-Type: application/json
-
-[
-  {
-    "DonorName": "",
-    "DonorMobile": ""
-  }
-]

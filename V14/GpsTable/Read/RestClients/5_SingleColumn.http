@@ -1,0 +1,1 @@
+GET http://localhost:5015/V14/GpsTable/Read/SingleColumn/{Column name}

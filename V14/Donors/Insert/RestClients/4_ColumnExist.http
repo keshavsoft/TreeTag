@@ -1,0 +1,7 @@
+POST http://localhost:5015/V14/Donors/Insert/ColumnExist
+Content-Type: application/json
+
+{
+  "DonorName": "",
+  "DonorMobile": ""
+}

@@ -1,1 +1,0 @@
-GET http://localhost:5015/SV6/GpsTable/Read/RowDataWithPk/{pk}

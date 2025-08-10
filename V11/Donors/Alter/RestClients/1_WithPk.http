@@ -1,7 +1,0 @@
-POST http://localhost:5015/V11/Donors/Alter/WithPk/{pk}
-Content-Type: application/json
-
-{
-  "DonorName": "",
-  "DonorMobile": ""
-}

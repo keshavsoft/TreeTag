@@ -1,7 +1,0 @@
-POST http://localhost:5015/V13/Donors/SubTable/Alter/WithPk/{RowPk}/{KeyName}/{pk}
-Content-Type: application/json
-
-{
-  "DonorName": "",
-  "DonorMobile": ""
-}
