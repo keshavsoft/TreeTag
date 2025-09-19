@@ -1,6 +1,6 @@
-/* Adjust for fixed header */
+/* Header removed - no padding needed */
 .main-content {
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 /* Override header styles for light background */
