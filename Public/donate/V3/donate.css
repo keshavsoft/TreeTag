@@ -1,6 +1,6 @@
-/* Adjust body for fixed header */
+/* Header removed - no padding needed */
 body.index-page {
-    padding-top: 80px;
+    padding-top: 0;
 }
 
 /* Override header styles for light background */
@@ -51,7 +51,7 @@ body {
 /* 🧠 3D image that pops out from the center container */
 .bg-pop {
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1000px;
