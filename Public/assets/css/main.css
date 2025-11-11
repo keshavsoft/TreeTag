@@ -1106,9 +1106,62 @@ section,
   top: calc(50% - 47px);
 }
 
-/*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
+/* ===== Enhanced About (No Image) ===== */
+
+.about-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #184d2b;
+  margin-bottom: 20px;
+}
+
+.about-lead {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.about-highlight,
+.about-mission,
+.about-vision {
+  background: #f1f9f4;
+  border-left: 6px solid #00a859;
+  padding: 20px 25px;
+  margin-top: 25px;
+  border-radius: 8px;
+}
+
+.about-highlight h4,
+.about-mission h4,
+.about-vision h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #184d2b;
+  margin-bottom: 15px;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list li {
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.about-list i {
+  color: #00a859;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/*-------------------------------------------------------------- # Stats Section --------------------------------------------------------------*/
 .stats .stats-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
