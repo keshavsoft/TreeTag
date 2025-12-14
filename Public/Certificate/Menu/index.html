@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,10 +16,10 @@
 
     <div class="container">
 
-        <div class="login-card">
+        <div class="login-card"> -->
 
-            <!-- ✅ NGO Logo -->
-            <img src="../../assets/img/alliswelllogo.png" class="ngo-logo" alt="NGO Logo">
+<!-- ✅ NGO Logo -->
+<!-- <img src="../../assets/img/alliswelllogo.png" class="ngo-logo" alt="NGO Logo">
 
             <h2>Donar Login</h2>
             <p class="subtitle">Access your certificate</p>
@@ -48,9 +48,9 @@
 
         </div>
 
-    </div>
+    </div> -->
 
-    <script>
+<!-- <script>
         const USER_ROUTES = {
             "bhavika": { password: "bhavika123", file: "indexv3.html" },
             "priya": { password: "priya123", file: "certificate_priya.html" },
@@ -90,6 +90,272 @@
             }
 
             window.location.href = USER_ROUTES[username].file;
+        });
+    </script> -->
+
+
+<!-- <script>
+        // Donor login + data mapping
+        const USER_ROUTES = {
+            "bhavika": {
+                password: "bhavika123",
+                certificateData: {
+                    name: "MISS. BHAVIKA VADODARIA",
+                    plantNo: "A1",
+                    species: "Coconut",
+                    locationProject: "NTR Beach, Kakinada, Beach Plantation Project by All Is Well Foundation",
+                    year: "2024",
+                    message: "I'm A1 Coconut Plant in Beach Plantation Project. Thanks to MISS. BHAVIKA VADODARIA for adopting me on 26-08-2023. I am here to contribute oxygen and shade for the area near blue zone of NTR Beach Kakinada. 🙏",
+                    treeImage: "../../assets/img/2.jpg"
+                }
+            },
+            "priya": {
+                password: "priya123",
+                certificateData: {
+                    name: "MISS. PRIYA XYZ",
+                    plantNo: "B2",
+                    species: "Neem",
+                    locationProject: "NTR Beach, Kakinada, Beach Plantation Project by All Is Well Foundation",
+                    year: "2024",
+                    message: "I'm B2 Neem Plant in Beach Plantation Project. Thanks to MISS. PRIYA XYZ for adopting me on 15-09-2024.",
+                    treeImage: "../../assets/img/3.jpg"
+                }
+            },
+            "rahul": {
+                password: "rahul123",
+                certificateData: {
+                    name: "MR. RAHUL ABC",
+                    plantNo: "C5",
+                    species: "Mango",
+                    locationProject: "NTR Beach, Kakinada, Beach Plantation Project by All Is Well Foundation",
+                    year: "2024",
+                    message: "I'm C5 Mango Plant in Beach Plantation Project. Thanks to MR. RAHUL ABC for adopting me.",
+                    treeImage: "../../assets/img/4.jpg"
+                }
+            },
+            "chandana": {
+                password: "chan123",
+                certificateData: {
+                    name: "MISS. CHANDANA",
+                    plantNo: "D7",
+                    species: "Ashoka",
+                    locationProject: "NTR Beach, Kakinada, Beach Plantation Project by All Is Well Foundation",
+                    year: "2024",
+                    message: "I'm D7 Ashoka Plant in Beach Plantation Project. Thanks to MISS. CHANDANA for adopting me.",
+                    treeImage: "../../assets/img/5.jpg"
+                }
+            }
+        };
+
+        lucide.createIcons();
+
+        // input animation
+        document.querySelectorAll(".input-field input").forEach(input => {
+            input.addEventListener("input", () => {
+                input.classList.toggle("filled", input.value.trim() !== "");
+            });
+        });
+
+        const passInput = document.getElementById("password");
+        const toggle = document.getElementById("togglePass");
+
+        toggle.addEventListener("click", () => {
+            passInput.type = passInput.type === "password" ? "text" : "password";
+            toggle.innerHTML = passInput.type === "text"
+                ? '<i data-lucide="eye-off"></i>'
+                : '<i data-lucide="eye"></i>';
+            lucide.createIcons();
+        });
+
+        document.getElementById("loginForm").addEventListener("submit", e => {
+            e.preventDefault();
+
+            const username = document.getElementById("username").value.trim().toLowerCase();
+            const password = passInput.value;
+            const errorBox = document.getElementById("error");
+
+            const user = USER_ROUTES[username];
+
+            if (!user || user.password !== password) {
+                errorBox.textContent = "Invalid username or password";
+                return;
+            }
+
+            errorBox.textContent = "";
+
+            // ✅ Store certificate data in localStorage
+            localStorage.setItem("donorCertificateData", JSON.stringify(user.certificateData));
+
+            // ✅ Redirect to ONE common certificate page
+            window.location.href = "certificate.html";
+        });
+    </script>
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllIsWell – Donor Login</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* ================================
+           GLOBAL CURSOR & SELECTION CONTROL
+           ================================ */
+
+        body {
+            font-family: 'Poppins', sans-serif;
+
+            /* ❌ Disable text caret globally */
+            caret-color: transparent;
+
+            /* ❌ Disable text selection */
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+
+            /* ❌ Force normal arrow cursor */
+            cursor: default;
+        }
+
+        /* ✅ Enable typing ONLY in inputs */
+        input,
+        textarea {
+            caret-color: auto;
+            user-select: auto;
+            cursor: text;
+        }
+
+        /* ✅ Buttons must look clickable */
+        button {
+            cursor: pointer;
+        }
+
+        /* ❌ Prevent text cursor on static elements */
+        h1,
+        h2,
+        h3,
+        p,
+        label,
+        img,
+        div,
+        span {
+            cursor: default;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="login-card">
+
+            <!-- NGO Logo -->
+            <img src="../../assets/img/alliswelllogo.png" class="ngo-logo" alt="NGO Logo">
+
+            <h2>Donor Login</h2>
+            <p class="subtitle">Access your certificate</p>
+
+            <form id="loginForm">
+
+                <div class="input-field">
+                    <input type="text" id="username" required autocomplete="off">
+                    <label>Username</label>
+                </div>
+
+                <div class="input-field password-box">
+                    <input type="password" id="password" required autocomplete="off">
+                    <label>Password</label>
+
+                    <button type="button" id="togglePass" class="eye-btn">
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+
+                <p id="error" class="error"></p>
+
+                <button type="submit" class="btn">Login</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        /* 🔴 Google Sheet → JSON API */
+        const SHEET_API =
+            "https://opensheet.elk.sh/1Ak6hvcqPj9_eg1C9sODyx_TGZ5o78puXJ2CkrFZM_R4/Sheet1";
+
+        let USERS = [];
+
+        /* Load users from Google Sheet */
+        fetch(SHEET_API)
+            .then(res => res.json())
+            .then(data => {
+                USERS = data;
+            })
+            .catch(() => {
+                document.getElementById("error").textContent =
+                    "Unable to load data. Please try again later.";
+            });
+
+        /* Floating label animation */
+        document.querySelectorAll(".input-field input").forEach(input => {
+            input.addEventListener("input", () => {
+                input.classList.toggle("filled", input.value.trim() !== "");
+            });
+        });
+
+        /* Password show/hide */
+        const passInput = document.getElementById("password");
+        const toggle = document.getElementById("togglePass");
+
+        toggle.addEventListener("click", () => {
+            passInput.type = passInput.type === "password" ? "text" : "password";
+            toggle.innerHTML = passInput.type === "text"
+                ? '<i data-lucide="eye-off"></i>'
+                : '<i data-lucide="eye"></i>';
+            lucide.createIcons();
+        });
+
+        /* Login logic */
+        document.getElementById("loginForm").addEventListener("submit", e => {
+            e.preventDefault();
+
+            const username = document.getElementById("username").value.trim().toLowerCase();
+            const password = passInput.value;
+            const errorBox = document.getElementById("error");
+
+            const user = USERS.find(u =>
+                u.username.toLowerCase() === username &&
+                u.password === password
+            );
+
+            if (!user) {
+                errorBox.textContent = "Invalid username or password";
+                return;
+            }
+
+            errorBox.textContent = "";
+
+            /* Save session */
+            sessionStorage.setItem("loggedUser", username);
+
+            /* Redirect */
+            window.location.href = "certificate.html";
         });
     </script>
 
