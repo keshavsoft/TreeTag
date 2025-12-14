@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geo-Tagging Certificate</title>
+
+    <style>
+        :root {
+            --green: #2e7d32;
+            --gold: #c9a227;
+            --soft-bg: #f6fff9;
+        }
+
+        body {
+            margin: 0;
+            padding: 16px;
+            font-family: "Georgia", serif;
+            background: linear-gradient(135deg, #f0f4f7, #e0f7e9);
+        }
+
+        .certificate {
+            max-width: 820px;
+            margin: auto;
+            background: #fffef9;
+            border: 12px double var(--gold);
+            border-radius: 14px;
+            padding: 28px 22px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Header */
+        .logo {
+            text-align: center;
+        }
+
+        .logo img {
+            height: 90px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--green);
+            letter-spacing: 2px;
+            margin: 12px 0 6px;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        .divider {
+            width: 90px;
+            height: 4px;
+            background: var(--gold);
+            margin: 10px auto 22px;
+            border-radius: 2px;
+        }
+
+        /* Text */
+        p {
+            text-align: center;
+            margin: 6px 0;
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #c62828;
+            margin: 10px 0;
+        }
+
+        /* Tree image */
+        .tree-image {
+            display: block;
+            margin: 22px auto;
+            max-width: 280px;
+            width: 100%;
+            border: 3px solid var(--green);
+            border-radius: 14px;
+            box-shadow: 0 5px 14px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Details box */
+        .details-box {
+            background: #fafafa;
+            padding: 14px;
+            border-left: 5px solid var(--gold);
+            border-right: 5px solid var(--gold);
+            border-radius: 10px;
+            margin-top: 16px;
+        }
+
+        .details-box p {
+            text-align: left;
+            margin: 6px 0;
+            font-size: 0.92rem;
+        }
+
+        /* GEO SECTION */
+        .geo-section {
+            margin-top: 26px;
+            padding: 16px;
+            background: var(--soft-bg);
+            border: 1px dashed var(--green);
+            border-radius: 14px;
+        }
+
+        .geo-title {
+            text-align: center;
+            font-weight: bold;
+            color: var(--green);
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .geo-badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .geo-badge {
+            background: #fff;
+            border: 1px solid var(--gold);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+        }
+
+        .map-btn {
+            display: inline-block;
+            margin: 10px auto 14px;
+            padding: 8px 18px;
+            background: var(--green);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 22px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .map-btn:hover {
+            background: #256428;
+        }
+
+        .map-frame {
+            margin-top: 10px;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 2px solid var(--gold);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .map-frame iframe {
+            width: 100%;
+            height: 220px;
+            border: 0;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.95rem;
+            border-top: 2px solid #555;
+            padding-top: 10px;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Mobile tweaks */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            .name {
+                font-size: 1.25rem;
+            }
+
+            .tree-image {
+                max-width: 220px;
+            }
+
+            .map-frame iframe {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="cert-container"></div>
+
+    <script>
+        const SHEET_API = "https://opensheet.elk.sh/1Ak6hvcqPj9_eg1C9sODyx_TGZ5o78puXJ2CkrFZM_R4/Sheet1";
+        const username = sessionStorage.getItem("loggedUser");
+
+        if (!username) {
+            document.body.innerHTML = "<h3 style='text-align:center'>Unauthorized Access</h3>";
+            throw "";
+        }
+
+        fetch(SHEET_API)
+            .then(res => res.json())
+            .then(rows => {
+                const d = rows.find(r => r.username.toLowerCase() === username);
+
+                if (!d) {
+                    document.body.innerHTML = "<h3 style='text-align:center'>Certificate not found</h3>";
+                    return;
+                }
+
+                const mapLink = `https://www.google.com/maps?q=${d.lat},${d.lng}`;
+                const mapEmbed = `https://maps.google.com/maps?q=${d.lat},${d.lng}&z=16&output=embed`;
+
+                document.getElementById("cert-container").innerHTML = `
+                <div class="certificate">
+                    <div class="logo">
+                        <img src="../../assets/img/logo.png" alt="All Is Well Foundation">
+                    </div>
+
+                    <h1>Geo-Tagging Certification</h1>
+                    <div class="divider"></div>
+
+                    <p>This certificate is proudly presented to</p>
+                    <p class="name">${d.name}</p>
+                    <p>for adopting the Plant No – <strong>${d.plantNo}</strong>.</p>
+
+                    <img src="${d.image}" class="tree-image" alt="Tree Image">
+
+                    <div class="details-box">
+                        <p><strong>Species:</strong> ${d.species}</p>
+                        <p><strong>Location & Project:</strong> ${d.location}</p>
+                        <p><strong>Year of Plantation:</strong> ${d.year}</p>
+                        <p><strong>Voice of the Tree:</strong></p>
+                        <p>${d.voice}</p>
+                    </div>
+
+                    <div class="geo-section">
+                        <div class="geo-title">🌍 Geo-Tag Verified Tree Location</div>
+
+                        <div class="geo-badges">
+                            <div class="geo-badge">Latitude: ${d.lat}</div>
+                            <div class="geo-badge">Longitude: ${d.lng}</div>
+                        </div>
+
+                        <div style="text-align:center">
+                            <a href="${mapLink}" target="_blank" class="map-btn">
+                                📍 View on Google Maps
+                            </a>
+                        </div>
+
+                        <div class="map-frame">
+                            <iframe src="${mapEmbed}" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        Authorized Signature & Seal
+                    </div>
+                </div>
+            `;
+            });
+    </script>
+
+</body>
+
+</html>
