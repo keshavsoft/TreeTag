@@ -44,5 +44,11 @@
             "autoFocus": "TreeName",
             "GroupByColumn": "UserName"
         }
+    },
+    "NonSecured": {
+        "SubRoutes": [
+            "Read",
+            "Insert"
+        ]
     }
 }
