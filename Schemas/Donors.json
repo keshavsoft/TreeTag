@@ -1,11 +1,11 @@
-{   "TableName": "Donors",
+{
+    "TableName": "Donors",
     "columns": [
-          {
+        {
             "field": "DonorName",
             "title": "Donor Name",
             "isInput": true,
             "type": "STRING"
-
         },
         {
             "field": "DonorMobile",

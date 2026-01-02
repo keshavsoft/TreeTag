@@ -1,0 +1,7 @@
+POST http://localhost:5015/V15/GpsTable/Insert/Default
+Content-Type: application/json
+
+[
+  "sample1",
+  "sample2"
+]

@@ -1,0 +1,9 @@
+POST http://localhost:5015/V15/GpsCertificatedata/Insert/AsIs
+Content-Type: application/json
+
+{
+  "Name": "",
+  "TreeNo": "",
+  "Latitude": "",
+  "Longitude": ""
+}
