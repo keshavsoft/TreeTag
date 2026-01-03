@@ -1,1 +1,0 @@
-{"TableName":"/V2/undefined","columns":[{"field":"DonorName","title":"Donor Name","isInput":true,"type":"STRING"},{"field":"DonorMobile","title":"Donor Mobile","isInput":true,"unique":false,"type":"NUMBER"}]}
