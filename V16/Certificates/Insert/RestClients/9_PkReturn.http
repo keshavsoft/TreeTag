@@ -1,0 +1,12 @@
+POST http://localhost:5015/V16/Certificates/Insert/PkReturn
+Content-Type: application/json
+
+{
+  "username": "",
+  "password": "",
+  "name": "",
+  "date": "",
+  "plantNo": "",
+  "lat": "",
+  "lng": ""
+}

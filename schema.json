@@ -1,7 +1,6 @@
 {
     "Tables": [
         "GpsTable",
-        "Donors",
-        "GpsCertificatedata"
+        "Certificates"
     ]
 }

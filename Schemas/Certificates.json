@@ -1,0 +1,62 @@
+{
+    "tableName": "Certificates",
+    "columns": [
+        {
+            "field": "username",
+            "title": "username",
+            "isInput": true
+        },
+        {
+            "field": "password",
+            "title": "password",
+            "isInput": true,
+            "filterControl": "STRING"
+        },
+        {
+            "field": "name",
+            "isInput": true,
+            "title": "Name",
+            "type": "input"
+        },
+        {
+            "field": "date",
+            "title": "Date",
+            "isInput": true,
+            "type": "STRING"
+        },
+        {
+            "field": "plantNo",
+            "title": "plantNo",
+            "isInput": true,
+            "type": "STRING"
+        },
+        {
+            "field": "lat",
+            "title": "Latitude",
+            "isInput": true,
+            "type": "STRING"
+        },
+        {
+            "field": "lng",
+            "title": "Longitude",
+            "isInput": true,
+            "type": "STRING"
+        }
+    ],
+    "data": [],
+    "Vertical": [],
+    "DataTableOptions": {
+        "Header": {
+            "autoFocus": "TreeName",
+            "GroupByColumn": "UserName"
+        }
+    },
+    "NonSecured": {
+        "SubRoutes": [
+            "Read",
+            "Insert",
+            "Alter",
+            "Delete"
+        ]
+    }
+}
