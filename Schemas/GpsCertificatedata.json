@@ -1,25 +1,43 @@
 {
-    "tableName": "GpsTable",
+    "tableName": "GpsCertificateData",
     "columns": [
         {
-            "field": "Name",
-            "title": "Name",
+            "field": "username",
+            "title": "username",
             "isInput": true
         },
         {
-            "field": "TreeNo",
-            "title": "Tree No",
+            "field": "password",
+            "title": "password",
             "isInput": true,
-            "filterControl": "input"
+            "filterControl": "STRING"
         },
         {
-            "field": "Latitude",
+            "field": "name",
             "isInput": true,
-            "title": "Latitude",
+            "title": "Name",
+            "type": "input"
+        },
+        {
+            "field": "date",
+            "title": "Date",
+            "isInput": true,
             "type": "STRING"
         },
         {
-            "field": "Longitude",
+            "field": "plantNo",
+            "title": "plantNo",
+            "isInput": true,
+            "type": "STRING"
+        },
+        {
+            "field": "lat",
+            "title": "Latitude",
+            "isInput": true,
+            "type": "STRING"
+        },
+        {
+            "field": "lng",
             "title": "Longitude",
             "isInput": true,
             "type": "STRING"
@@ -36,7 +54,9 @@
     "NonSecured": {
         "SubRoutes": [
             "Read",
-            "Insert"
+            "Insert",
+            "Alter",
+            "Delete"
         ]
     }
 }
